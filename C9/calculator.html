@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>sample</title>
+  <style>
+  
+  
+  
+    .common-circle{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 25px;
+      line-height: 80px;
+      position: relative;
+      display: inline-block;
+    }
+  
+    .circle{
+      background: #cccccc;
+    }
+    .circle1{
+      background: #cccccc;
+    }
+    .circle2{
+      background: #cccccc;
+    }
+    .circle3{
+      background: #ffa500;
+    }
+    .circle4{
+      background: #666666;
+    }
+    .circle5{
+      background: #666666;
+    }
+    .circle6{
+      background: #666666;
+    }
+    .circle7{
+      background: #ffa500;
+    }
+    .circle8{
+      background: #666666;
+    }
+    .circle9{
+      background: #666666;
+    }
+    .circle10{
+      background: #666666;
+    }
+    .circle11{
+      background: #ffa500;
+    }
+    .circle12{
+      background: #666666;
+    }
+    .circle13{
+      background: #666666;
+    }
+    .circle14{
+      background: #666666;
+    }
+    .circle15{
+      background: #ffa500;
+    }
+    .circle16{
+      width: 135px;
+      height: 80px;
+      border-radius: 50px;
+      background: #666666;
+      text-align: left;
+      line-height: 80px;
+      font-size: 25px;
+      padding-left: 30px;
+      display: inline-block;
+    }
+    .circle17{
+      background: #666666;
+    }
+    .circle18{
+      background: #ffa500;
+    }
+    
+   
+    
+  </style>
+</head>
+<body>
+  <input type="text" id="result">
+  <div>
+    <input type="button" value="AC" onclick="clear()">
+    <input type="button" value="+/-" onclick="edit(this)">
+    <input type="button" value="%" onclick="edit(this)">
+    <input type="button" value="/" onclick="edit(this)">
+  </div>
+  <div>
+    <input type="button" value="7" onclick="edit(this)">
+    <input type="button" value="8" onclick="edit(this)">
+    <input type="button" value="9" onclick="edit(this)">
+    <input type="button" value="*" onclick="edit(this)">
+  </div>
+  <div>
+    <input type="button" value="4" onclick="edit(this)">
+    <input type="button" value="5" onclick="edit(this)">
+    <input type="button" value="6" onclick="edit(this)">
+    <input type="button" value="-" onclick="edit(this)">
+  </div>
+  <div>
+    <input type="button" value="1" onclick="edit(this)">
+    <input type="button" value="2" onclick="edit(this)">
+    <input type="button" value="3" onclick="edit(this)">
+    <input type="button" value="+" onclick="edit(this)">
+  </div>
+  <div>
+    <input type="button" value="0" onclick="edit(this)">
+    <input type="button" value="." onclick="edit(this)">
+    <input type="button" value="=" onclick="calc()">
+  </div>
+  <script language="javascript" type="text/javascript">
+    var result = document.getElementById("result");
+    function edit(elem) {
+      result.value = result.value + elem.value;
+    }
+    function calc() {
+      result.value = new Function("return " + result.value)();
+    }
+    
+  </script>
+</body>
+</html>

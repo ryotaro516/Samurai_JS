@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>電卓アプリ</title>
+  <style>
+  
+  
+  
+    .common-circle{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 25px;
+      line-height: 80px;
+      position: relative;
+      display: inline-block;
+    }
+  
+    .circle{
+      background: #cccccc;
+    }
+    .circle1{
+      background: #cccccc;
+    }
+    .circle2{
+      background: #cccccc;
+    }
+    .circle3{
+      background: #ffa500;
+    }
+    .circle4{
+      background: #666666;
+    }
+    .circle5{
+      background: #666666;
+    }
+    .circle6{
+      background: #666666;
+    }
+    .circle7{
+      background: #ffa500;
+    }
+    .circle8{
+      background: #666666;
+    }
+    .circle9{
+      background: #666666;
+    }
+    .circle10{
+      background: #666666;
+    }
+    .circle11{
+      background: #ffa500;
+    }
+    .circle12{
+      background: #666666;
+    }
+    .circle13{
+      background: #666666;
+    }
+    .circle14{
+      background: #666666;
+    }
+    .circle15{
+      background: #ffa500;
+    }
+    .circle16{
+      width: 135px;
+      height: 80px;
+      border-radius: 50px;
+      background: #666666;
+      text-align: left;
+      line-height: 80px;
+      font-size: 25px;
+      padding-left: 30px;
+      display: inline-block;
+    }
+    .circle17{
+      background: #666666;
+    }
+    .circle18{
+      background: #ffa500;
+    }
+    
+   
+    
+  </style>
+  </head>
+  <body>
+    
+      <div id="result"  class="result">0</div>
+    
+        <div class="first">
+          <div class="circle common-circle">AC</div>
+          <div class="circle1 common-circle">+/-</div>
+          <div class="circle2 common-circle">%</div>
+          <div class="circle3 common-circle">÷</div>
+        </div>
+        <div class="second">
+          <div class="circle4 common-circle">7</div>
+          <div class="circle5 common-circle">8</div>
+          <div class="circle6 common-circle">9</div>
+          <div class="circle7 common-circle">×</div>
+        </div>
+        <div class="third">
+          <div class="circle8 common-circle">4</div>
+          <div class="circle9 common-circle">5</div>
+          <div class="circle10 common-circle">6</div>
+          <div class="circle11 common-circle">-</div>
+        </div>
+        <div class="forth">
+          <div id="one" class="circle12 common-circle">1</div>
+          <div id="two" class="circle13 common-circle">2</div>
+          <div class="circle14 common-circle">3</div>
+          <div class="circle15 common-circle">+</div>
+        </div>
+        <div class="fifth">
+          <div class="circle16">0</div>
+          <div class="circle17 common-circle">.</div>
+          <div class="circle18 common-circle">=</div>
+        </div>
+  
+    <script>
+    const result = document.getElementById("result")  
+    const one = document.getElementById("one")
+    const two = document.getElementById("two")
+    
+    one.addEventListener("click" , () => {
+      inputNumber(one)
+    //if (result.innerText === "0")  {
+      //result.innerText=one.innerText
+    // } else {
+      // result.innerText=result.innerText + one.innerText
+    // }  
+    })
+    two.addEventListener("click" , () => {
+      inputNumber(two)
+    })  
+    const inputNumber = (number) => {
+      if (result.innerText === "0")  {
+      result.innerText=number.innerText
+    } else {
+      result.innerText=result.innerText + number.innerText
+    }  
+    }
+      
+    </script>
+  </body>
+</html>

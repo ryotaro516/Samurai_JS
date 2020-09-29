@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>電卓アプリ</title>
+  <style>
+    .circle{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #cccccc;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle1{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #cccccc;
+      position: relative;
+      left: 100px;
+      bottom: 80px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle2{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #cccccc;
+      position: relative;
+      left: 200px;
+      bottom: 160px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle3{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ffa500;
+      position: relative;
+      left: 300px;
+      bottom: 240px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle4{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 220px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle5{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 300px;
+      left: 100px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle6{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 380px;
+      left: 200px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle7{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ffa500;
+      position: relative;
+      bottom: 460px;
+      left: 300px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle8{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 440px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle9{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 520px;
+      left: 100px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle10{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 600px;
+      left: 200px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle11{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ffa500;
+      position: relative;
+      bottom: 680px;
+      left: 300px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle12{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 660px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle13{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 740px;
+      left: 100px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle14{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 820px;
+      left: 200px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle15{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ffa500;
+      position: relative;
+      bottom: 900px;
+      left: 300px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle16{
+      width: 150px;
+      height: 80px;
+      border-radius: 50px;
+      background: #666666;
+      position: relative;
+      bottom: 880px;
+      text-align: left;
+      line-height: 80px;
+      font-size: 25px;
+      padding-left: 30px;
+    }
+    .circle17{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #666666;
+      position: relative;
+      bottom: 960px;
+      left: 200px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .circle18{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ffa500;
+      position: relative;
+      bottom: 1040px;
+      left: 300px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 25px;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="circle">AC</div>
+    <div class="circle1">+/-</div>
+    <div class="circle2">%</div>
+    <div class="circle3">÷</div>
+    <div class="circle4">7</div>
+    <div class="circle5">8</div>
+    <div class="circle6">9</div>
+    <div class="circle7">×</div>
+    <div class="circle8">4</div>
+    <div class="circle9">5</div>
+    <div class="circle10">6</div>
+    <div class="circle11">-</div>
+    <div class="circle12">1</div>
+    <div class="circle13">2</div>
+    <div class="circle14">3</div>
+    <div class="circle15">+</div>
+    <div class="circle16">0</div>
+    <div class="circle17">.</div>
+    <div class="circle18">=</div>
+    <script>
+    
+      
+    </script>
+  </body>
+</html>
